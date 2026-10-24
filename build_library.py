@@ -9,7 +9,8 @@ a sponsor ask, and a plans panel that opens from every Subscribe button.
 Everything shown comes from Substack's public data at build time (posts, prices, benefits, subscriber count, Notes,
 recommendations), so the page never drifts from what Substack says. If a fetch fails, that section keeps the last
 saved data. Shelves, spine titles, colours, quotes and the tool cubes live in shelves.json.
-Substack's website editor takes no custom code, so this page is hosted on its own (GitHub Pages, rebuilt hourly)."""
+Substack's website editor takes no custom code, so this page is hosted on its own (GitHub Pages). After each new post:
+    bash library/update.sh   (rebuilds from Substack here, pushes, GitHub publishes)"""
 import datetime as dt, email.utils, hashlib, html, json, math, re, sys, time, urllib.parse, urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
@@ -714,7 +715,7 @@ TEMPLATE = """<!doctype html>
 %ABOUT%
 %SPONSOR%
 <footer class="foot"><p>%HERO%</p><a class="btn" href="%PUB%/subscribe" data-sub>Subscribe →</a>
-<small>Built from Substack every hour. Every quote on a book is copied word for word from the post.</small></footer>
+<small>Rebuilt from Substack each time a new post goes out. Every quote on a book is copied word for word from the post.</small></footer>
 </div>
 <aside id="card" class="card" hidden aria-live="polite"><button class="x" id="c-x" type="button" aria-label="Close">×</button><img id="c-cover" class="card-cover" alt="">
 <div class="k" id="c-meta"></div><h3 id="c-title"></h3><p class="c-lead" id="c-lead">From the post</p>

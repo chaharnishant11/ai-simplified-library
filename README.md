@@ -6,9 +6,9 @@ Every post from [AI Simplified](https://nishantchahar.substack.com) by Nishant C
 
 ## How it stays current
 
-`.github/workflows/build.yml` runs every hour. It runs `build_library.py`, which reads Substack's public data (posts, prices, benefits, subscriber count, Notes, recommendations), then publishes to GitHub Pages. A new post appears on its own within the hour.
+After each new post, run `bash update.sh` on the Mac. It rebuilds from Substack's public data (posts, prices, benefits, subscriber count, Notes, recommendations) and pushes. `.github/workflows/build.yml` then publishes to GitHub Pages.
 
-If a fetch fails, that section keeps the last snapshot in `data.json`.
+The fetch runs on the Mac because Substack refuses GitHub's servers. If a fetch fails, that section keeps the last snapshot in `data.json`.
 
 ## Editing
 

@@ -10,7 +10,8 @@ Everything shown comes from Substack's public data at build time (posts, prices,
 recommendations), so the page never drifts from what Substack says. If a fetch fails, that section keeps the last
 saved data. Shelves, spine titles, colours, quotes and the tool cubes live in shelves.json.
 Substack's website editor takes no custom code, so this page is hosted on its own (GitHub Pages, rebuilt hourly)."""
-import datetime as dt, hashlib, html, json, math, re, sys, time, urllib.parse, urllib.request
+import datetime as dt, email.utils, hashlib, html, json, math, re, sys, time, urllib.parse, urllib.request
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 L = Path(__file__).resolve().parent
@@ -18,7 +19,7 @@ CFG = json.loads((L / "shelves.json").read_text())
 PUB = CFG["publication"].rstrip("/")
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36"
 CW = 240  # cover width in px; spine thickness and height vary per book
-ACCESS = {"everyone": "Free", "only_subscribers": "Free with email", "only_paid": "Paid", "founding": "Founding"}
+ACCESS = {"everyone": "Free", "only_subscribers": "Free with email", "only_paid": "Paid", "founding": "Founding", "new": "New"}
 SKIP = re.compile(r"^(subscribe now|share|leave a comment|watch the video|in this post|this guide covers|.*reader-supported publication)", re.I)
 GREETING = re.compile(r"^hi guys, nishant here\.\s*", re.I)
 E = lambda s: html.escape(str(s), quote=True)
@@ -50,10 +51,36 @@ def fetch_posts():
             continue
         full = get(f"{PUB}/api/v1/posts/{p['slug']}")
         body = full.get("body_html") or full.get("truncated_body_html") or ""
-        paras = [html.unescape(re.sub(r"<[^>]+>", "", m)).strip()
-                 for m in re.findall(r"<(?:p|h[1-4]|li|blockquote)[^>]*>(.*?)</(?:p|h[1-4]|li|blockquote)>", body, re.S)]
         out.append({k: p.get(k) for k in ("slug", "title", "subtitle", "post_date", "audience", "wordcount", "cover_image", "canonical_url")}
-                   | {"tags": [t["name"] for t in p.get("postTags") or []], "paras": [x for x in paras if x]})
+                   | {"tags": [t["name"] for t in p.get("postTags") or []], "paras": paras_of(body)})
+    return out
+
+
+def paras_of(body_html):
+    return [x for x in (html.unescape(re.sub(r"<[^>]+>", "", m)).strip()
+            for m in re.findall(r"<(?:p|h[1-4]|li|blockquote)[^>]*>(.*?)</(?:p|h[1-4]|li|blockquote)>", body_html, re.S)) if x]
+
+
+def fetch_posts_rss(prev_posts):
+    """Fallback when Substack's API refuses the request (it returns 403 to GitHub's servers; RSS still works).
+    Posts already in the snapshot keep their saved data. New ones come from the feed, marked "new" because RSS
+    doesn't say whether a post is free or paid, so the page never labels a paid post as free."""
+    ns = {"content": "http://purl.org/rss/1.0/modules/content/"}
+    known = {p["slug"]: p for p in prev_posts}
+    out = list(prev_posts)
+    for it in ET.fromstring(get(PUB + "/feed", as_json=False)).iter("item"):
+        link = (it.findtext("link") or "").strip()
+        slug = link.rstrip("/").rsplit("/p/", 1)[-1]
+        if not slug or slug in known:
+            continue
+        body = it.findtext("content:encoded", default="", namespaces=ns)
+        enc = it.find("enclosure")
+        when = email.utils.parsedate_to_datetime(it.findtext("pubDate")).astimezone(dt.timezone.utc)
+        out.append({"slug": slug, "title": (it.findtext("title") or "").strip(), "subtitle": (it.findtext("description") or "").strip(),
+                    "post_date": when.strftime("%Y-%m-%dT%H:%M:%S.000Z"), "audience": "new",
+                    "wordcount": len(re.sub(r"<[^>]+>", " ", body).split()), "cover_image": enc.get("url") if enc is not None else None,
+                    "canonical_url": link, "tags": [], "paras": paras_of(body)})
+        print(f"rss: added {slug}")
     return out
 
 
@@ -96,12 +123,20 @@ def fetch():
     """Fetch every section; a section that fails keeps its last saved copy (so a flaky API never blanks the page)."""
     prev = json.loads((L / "data.json").read_text()) if (L / "data.json").exists() else {}
     data = {}
-    for key, fn in (("pub", fetch_pub), ("posts", fetch_posts)):
+    try:
+        data["pub"] = fetch_pub()
+    except Exception as e:  # noqa: BLE001
+        print(f"warn: pub fetch failed ({e}); keeping the saved copy")
+        data["pub"] = prev.get("pub", {})
+    try:
+        data["posts"] = fetch_posts()
+    except Exception as e:  # noqa: BLE001
+        print(f"warn: posts API failed ({e}); trying the RSS feed")
         try:
-            data[key] = fn()
-        except Exception as e:  # noqa: BLE001
-            print(f"warn: {key} fetch failed ({e}); keeping the saved copy")
-            data[key] = prev.get(key, {} if key == "pub" else [])
+            data["posts"] = fetch_posts_rss(prev.get("posts", []))
+        except Exception as e2:  # noqa: BLE001
+            print(f"warn: RSS failed too ({e2}); keeping the saved copy")
+            data["posts"] = prev.get("posts", [])
     for key, fn, arg in (("recs", fetch_recs, "id"), ("notes", fetch_notes, "author_id")):
         try:
             data[key] = fn(data["pub"][arg])

@@ -1,0 +1,57 @@
+name: Build the Library
+
+# Rebuilds the page from Substack's public data and publishes it to GitHub Pages.
+# Hourly, so a new post shows up on the shelf within the hour without anyone running anything.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build from Substack
+        run: python3 -I build_library.py
+      # Commit the fresh snapshot only when Substack changed. It is the fallback if a later fetch fails, and the
+      # commit keeps GitHub from pausing the hourly schedule on a quiet repo.
+      - name: Save the snapshot
+        run: |
+          if ! git diff --quiet data.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data.json
+            git commit -m "Update the Substack snapshot"
+            git push
+          fi
+      - name: Assemble the site
+        run: mkdir _site && cp -r index.html fonts img _site/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - id: deploy
+        uses: actions/deploy-pages@v4

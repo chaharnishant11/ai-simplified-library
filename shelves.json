@@ -1,0 +1,116 @@
+{
+  "_note": "Edit this, then run: python3 -I library/build_library.py. Shelves render top to bottom in this order. A post goes on the first shelf whose slugs or tags match it, else on the default shelf. 'spine' is the short title printed on the spine. 'excerpt' must be copied word for word from the post: the build fails if it isn't found in the post's text.",
+  "publication": "https://nishantchahar.substack.com",
+  "name": "AI Simplified",
+  "author": "Nishant Chahar",
+  "hero": "I run my content on Claude. Subscribe for the setup, and get 3 of my skills free.",
+  "default_shelf": "guides",
+  "shelves": [
+    {
+      "id": "builds",
+      "name": "Builds & pipelines",
+      "tags": [
+        "kit",
+        "pipeline"
+      ],
+      "slugs": [
+        "i-edit-every-video-with-claude-here",
+        "i-built-my-own-granola-for-70-with"
+      ]
+    },
+    {
+      "id": "guides",
+      "name": "Guides & stories",
+      "tags": [],
+      "slugs": [
+        "105-chatgpt-photo-codes-one-photo",
+        "how-i-sold-my-first-company-at-25"
+      ]
+    }
+  ],
+  "books": {
+    "i-edit-every-video-with-claude-here": {
+      "spine": "I edit every video with Claude",
+      "color": "#080808",
+      "excerpt": "In one line: Claude edits every video I post, a different model reviews it, and every mistake becomes a rule it never repeats."
+    },
+    "i-built-my-own-granola-for-70-with": {
+      "spine": "I built my own Granola for $70",
+      "color": "#DC6E4E"
+    },
+    "105-chatgpt-photo-codes-one-photo": {
+      "spine": "105 ChatGPT photo codes",
+      "color": "#3475B1",
+      "excerpt": "A code is a short word you type after uploading a photo of yourself."
+    },
+    "how-i-sold-my-first-company-at-25": {
+      "spine": "How I sold my first company at 25",
+      "color": "#E4A60D"
+    }
+  },
+  "photo": {
+    "src": "img/nishant.jpg",
+    "alt": "Nishant Chahar",
+    "link": "/about"
+  },
+  "_tools_note": "Cubes around the photo, one per tool he writes about (each appears in his posts). 'ink' is the logo colour (a colour or a gradient), or 'image' to show the logo file as-is.",
+  "tools": [
+    {
+      "name": "Claude",
+      "logo": "img/logos/claude.svg",
+      "face": "#D97757",
+      "ink": "#FFFFFF"
+    },
+    {
+      "name": "Codex",
+      "logo": "img/logos/openai.svg",
+      "face": "#000000",
+      "ink": "#FFFFFF"
+    },
+    {
+      "name": "Gemini",
+      "logo": "img/logos/gemini.svg",
+      "face": "#FFFFFF",
+      "ink": "linear-gradient(135deg,#4796E3,#9177C7 55%,#CA6673)"
+    },
+    {
+      "name": "Remotion",
+      "logo": "img/logos/remotion.png",
+      "face": "#FFFFFF",
+      "ink": "image"
+    },
+    {
+      "name": "HyperFrames",
+      "logo": "img/logos/hyperframes.svg",
+      "face": "#101317",
+      "ink": "image"
+    }
+  ],
+  "about": {
+    "_note": "Facts only, from CLAUDE.md. No follower counts here: they go stale on a page that rebuilds itself.",
+    "paras": [
+      "AI Simplified is where I write up how I make my content with AI: the setups, the prompts and the files behind every reel and video I post.",
+      "I'm Nishant Chahar. I studied at NSIT and worked at Microsoft. Then I co-founded AlgoPrep, which grew to 100K free and 7K paid users before I sold it to a Series D startup and joined them as EVP. I was in Entrepreneur First's Fall cohort and raised $250K.",
+      "One new post a week, by email and on these shelves."
+    ],
+    "links": [
+      [
+        "The full About page",
+        "https://nishantchahar.substack.com/about"
+      ],
+      [
+        "Instagram @nishantchahar.ai",
+        "https://www.instagram.com/nishantchahar.ai/"
+      ],
+      [
+        "My Substack profile",
+        "https://substack.com/@nishantchahar"
+      ]
+    ]
+  },
+  "sponsor": {
+    "email": "contact.nishant11@gmail.com",
+    "subject": "Sponsoring AI Simplified",
+    "line": "Put your tool in front of AI Simplified readers. Email me and tell me what you'd like to run."
+  }
+}

@@ -23,6 +23,7 @@
       "name": "Guides & stories",
       "tags": [],
       "slugs": [
+        "luck-has-a-surface-area",
         "105-chatgpt-photo-codes-one-photo",
         "how-i-sold-my-first-company-at-25"
       ]
@@ -46,6 +47,11 @@
     "how-i-sold-my-first-company-at-25": {
       "spine": "How I sold my first company at 25",
       "color": "#E4A60D"
+    },
+    "luck-has-a-surface-area": {
+      "spine": "Luck has a surface area",
+      "color": "#13A046",
+      "excerpt": "Every person you know is a door."
     }
   },
   "photo": {
@@ -90,7 +96,7 @@
     "_note": "Facts only, from CLAUDE.md. No follower counts here: they go stale on a page that rebuilds itself.",
     "paras": [
       "AI Simplified is where I write up how I make my content with AI: the setups, the prompts and the files behind every reel and video I post.",
-      "I'm Nishant Chahar. I studied at NSIT and worked at Microsoft. Then I co-founded AlgoPrep, which grew to 100K free and 7K paid users before I sold it to a Series D startup and joined them as EVP. I was in Entrepreneur First's Fall cohort and raised $250K.",
+      "I'm Nishant Chahar. I studied at NSIT and worked at Microsoft. Then I co-founded AlgoPrep, which grew to 100K free and 7K paid users before I sold it to a Series D startup and joined them as AVP and Head of Product. I was in Entrepreneur First's Fall cohort and raised $250K.",
       "One new post a week, by email and on these shelves."
     ],
     "links": [

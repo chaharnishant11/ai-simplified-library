@@ -20,6 +20,62 @@
  },
  "posts": [
   {
+   "slug": "youre-using-10-of-claude",
+   "title": "You’re Using 10% of Claude",
+   "subtitle": "The five levels I use every day, from picking the model to letting Claude run jobs on its own.",
+   "post_date": "2026-11-02T12:28:56.702Z",
+   "audience": "only_paid",
+   "wordcount": 3558,
+   "cover_image": "https://substackcdn.com/image/fetch/$s_!JQoh!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F0b03b21d-7aa2-4bbd-ad40-793eab43ea1d_1456x820.jpeg",
+   "canonical_url": "https://nishantchahar.substack.com/p/youre-using-10-of-claude",
+   "tags": [],
+   "paras": [
+    "On 30 October, Anthropic renamed its plans. There’s a Max plan at $100 a month now, and an Ultra plan at $200.",
+    "I’ve been paying for the $200 tier for four or five months. In that time I moved my video edits, my carousels and my scripting onto Claude.",
+    "And the more I use it, the more I think the average Claude user touches about 10% of it. That number is my own guess.",
+    "So I mapped the other 90% into five levels, in the order I’d learn them.",
+    "[Embed YouTube: [YouTube URL]]",
+    "This is the written version of my latest video. Same five levels, plus the details I couldn’t fit in 19 minutes.",
+    "This guide covers:",
+    "Why experience with Claude matters",
+    "The five levels at a glance",
+    "Level 1: The brain (models, tokens, effort, plans)",
+    "Level 2: Where you work (chat, Claude Code, sessions, /btw, Duet)",
+    "Level 3: What it makes (artifacts and real files)",
+    "Level 4: Making it yours (memory, CLAUDE.md, skills, connectors, plugins, mods)",
+    "Level 5: Let it run (permissions, sub-agents, /goal, scheduled tasks)",
+    "But what about...",
+    "Where to start: a five-week plan",
+    "My video editing skill bundle: 33 skills, 18 commands, 260 memories",
+    "Sections 1 and 2 are free. Sections 3 to 10, and the bundle, are for paid subscribers.",
+    "Two things before we start:",
+    "Save this. It’s long, and Level 4 is the part you’ll come back to.",
+    "Send it to one person who still uses Claude like a search box.",
+    "Share",
+    "Subscribe now",
+    "1. Why experience with Claude matters",
+    "In March, Anthropic published its Economic Index report, built on a sample of Claude conversations. One finding stood out to me.",
+    "People who signed up at least six months earlier had a 10% higher success rate in their conversations than newer users. Anthropic is careful with it. They call it an association, and early adopters might just be different people. They also say it could be learning by doing.",
+    "That matches what I see. New users open Claude, see chat, Claude Code, projects, skills, plugins and connectors, and don’t know which one to touch. So they use it as another chatbot.",
+    "This post is the shortcut. You don’t need to code for any of it. I’ll explain every term the first time it shows up.",
+    "★ Remember. Six months in, users had a 10% higher success rate. Every level below is a habit you can build in less time than that.",
+    "2. The five levels at a glance",
+    "Each level is one decision, and each has one trap.",
+    "The brain. Which model and effort level meet your quality bar? Trap: maximum effort for every small task.",
+    "Where you work. Which files and project context belong together? Trap: one endless chat for unrelated work.",
+    "What it makes. What usable file or artifact should exist at the end? Trap: copy-pasting a chat answer into the real tool.",
+    "Making it yours. What instructions, skills and connections does this job need? Trap: installing every tool and loading everything.",
+    "Let it run. What can it do, when is it done, and when must it stop? Trap: broad permission without a finish line.",
+    "If you only take one thing from the free part: pick one task you do every week, and run it through all five levels, one level a week.",
+    "What paid subscribers get",
+    "Everything above is the map. Below the paywall is how I actually use each level, and the files.",
+    "All five levels in full: the four models and the advisor, how I compact chats, effort and plans, sessions and /btw, artifacts, memory, CLAUDE.md, skills, connectors, plugins, mods, the six permission modes, sub-agents, /goal and scheduled tasks",
+    "The five-week plan, with my four-page practice guide (PDF)",
+    "My video editing skill bundle: 33 Claude Code skills, 18 slash commands, the 260 memory notes behind every rule, and my style docs. It’s the setup I edit my reels and YouTube videos with, ready to install.",
+    "Subscribe now"
+   ]
+  },
+  {
    "slug": "luck-has-a-surface-area",
    "title": "Luck Has a Surface Area",
    "subtitle": "Why the people you know and the skills you stack matter more once AI can follow any instruction.",
@@ -515,6 +571,13 @@
    "author": "For Web3 Media"
   },
   {
+   "name": "Product Market Fit",
+   "url": "https://www.productmarketfit.tech",
+   "logo": "https://substack-post-media.s3.amazonaws.com/public/images/7087caf4-02fd-401c-b47e-1c8ecfa7ac21_360x360.png",
+   "hero": "Daily high-signal content on how to build, grow and fund startups in the AI era",
+   "author": "Guillermo Flor"
+  },
+  {
    "name": "Alvyr’s Newsletter",
    "url": "https://alvyr.substack.com",
    "logo": null,
@@ -537,6 +600,14 @@
   }
  ],
  "notes": [
+  {
+   "id": 373340195,
+   "date": "2026-11-02T03:30:03.346Z",
+   "body": "Upload a photo of yourself to ChatGPT and type one word: /wormview\n\nThe camera drops to the floor and points up. In mine, my shoes ended up as the biggest thing in the frame.\n\nThere's no hidden command list behind the slash. ChatGPT reads the word as a style, which is why a made-up code works at all. I put 105 of them in one list.",
+   "likes": 0,
+   "image": null,
+   "url": "https://substack.com/@nishantchahar/note/c-373340195"
+  },
   {
    "id": 373340019,
    "date": "2026-11-01T03:30:04.122Z",

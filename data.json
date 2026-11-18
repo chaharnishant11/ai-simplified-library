@@ -539,6 +539,54 @@
     "But more on that later.",
     "Nishant's Substack is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber."
    ]
+  },
+  {
+   "slug": "unacademys-founder-steps-back-two",
+   "title": "Unacademy’s founder steps back, two months after a 94% markdown sale",
+   "subtitle": "A new weekly column: what happened in startups this week, read from a founder&#8217;s side",
+   "post_date": "2026-11-18T09:09:57.000Z",
+   "audience": "new",
+   "wordcount": 844,
+   "cover_image": "https://substackcdn.com/image/fetch/$s_!hbj0!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F2e5933dd-6aec-4aa2-99d8-67e43312480c_1456x816.png",
+   "canonical_url": "https://nishantchahar.substack.com/p/unacademys-founder-steps-back-two",
+   "tags": [],
+   "paras": [
+    "If part of your pay is startup stock, or there’s an offer in your inbox that includes some, this one’s for you.",
+    "In 2021, Unacademy was worth about $3.4 billion. In September, upGrad bought it for just over $200 million, all in stock. That’s roughly 94% below the peak. On Wednesday, its founder stepped back as CEO.",
+    "This is the first edition of a new weekly column: what happened in startups this week, read from a founder’s side. It takes five minutes. From 29 November it comes every Sunday, and it focuses on AI startups around the world.",
+    "If a friend is deciding on a startup offer right now, forward this to them.",
+    "AI Simplified is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.",
+    "The lead: Unacademy’s founder steps back",
+    "On 11 November, Gaurav Munjal said he’s moving from CEO of Unacademy to Executive Chairman. Akhilendra Kumar takes over as CEO. Munjal says he’ll stay involved in operations every day and help with upGrad’s IPO.",
+    "The sale itself went through in September, all in stock. Business Today puts the value at just over $200 million.",
+    "First, where I’m coming from. I know Roman Saini, Unacademy’s co-founder. I’ve met him several times and I have huge respect for him. What they did over the last ten years was a revolution: students could learn online, live, straight from teachers. There was a lot of tech behind it, and it was genuinely something crazy to watch.",
+    "I’ve sold a company too, and I felt happy for a few hours. There’s a name for that: the hedonic treadmill. Something good happens, you enjoy it for a while, and then it’s the new normal. It has happened to me at every step:",
+    "clearing JEE",
+    "getting into NSIT, and getting computer science",
+    "an internship, then an offer from Microsoft, then joining",
+    "100K subscribers, then 500K",
+    "starting my first company, and making the first ₹1 crore",
+    "selling it, and becoming an AVP at 25",
+    "leaving, joining Entrepreneur First, and raising from them",
+    "Each one felt good for some time. Then it was normal.",
+    "So no, I don’t think selling at 94% below the peak is a failure. Unacademy raised at the top of the market. The founders made money, and the team learned a huge amount.",
+    "It isn’t fair on the employees, or on the investors. But it is what it is. ESOPs are always a bit of a lottery: if you get it, you get it, and if you don’t, you don’t. There’s nothing right or wrong about it.",
+    "Where I think they went wrong is timing. They should probably have done this earlier, once it looked like a sinking ship. My guess is they waited too long because they were too attached.",
+    "Before the sale, they started Airlearn, a language-learning app, and a number of people from Unacademy moved to that team. If you were close to the founders, you got that chance. From what I can see, Airlearn is doing pretty well. (According to Business Today, it was part of what upGrad bought.)",
+    "If your startup just got acquired, or you think it might, these are the three questions to ask:",
+    "What happens to your unvested options in the deal?",
+    "Is your team part of the plan, or part of the cost savings?",
+    "Who will you report to in six months?",
+    "None of them is a rude question. You’re allowed to ask.",
+    "Also this week",
+    "Nvidia’s CEO resigned. On 12 November, Nvidia said Jensen Huang had resigned as CEO, president and board member, effective immediately. CFO Colette Kress is interim CEO while the board searches. The company’s filing gives no reason.",
+    "Qualcomm is cutting jobs in India. Layoffs started in Bengaluru the day after Diwali, according to The Week (11 November), which puts the number at around 1,000 from ground reports. Qualcomm hasn’t commented or confirmed a number. It also has offices in Hyderabad, Chennai and Delhi NCR.",
+    "Indian startup funding had a very quiet week. Entrackr counted $31.3 million across 12 startups from 9 to 14 November, down from $258.1 million the week before. Inc42, counting 9 to 13 November, got $25.2 million across nine deals. Entrackr’s eight-week average is about $194 million a week, so one week isn’t a trend yet.",
+    "Prompt of the week",
+    "When there’s news about the company you work for, paste the article into Claude or ChatGPT with this:",
+    "Here's a news article about [company]. I work there as a [your role] in [team].\nExplain in plain English what this could mean for people in my role over the next six months: what's likely to change and what probably won't.\nKeep what the article actually says separate from what you're guessing.\nThen give me three questions I could ask my manager.The third line matters most. Leave it out and the answer mixes facts with guesses, and you can’t tell which is which.",
+    "P.S. Would you join a startup right now, or stay where you are? Hit reply and tell me why."
+   ]
   }
  ],
  "recs": [
@@ -550,11 +598,25 @@
    "author": "Farhan Rakhangi | AI Agents"
   },
   {
+   "name": "AI Artifact",
+   "url": "https://johnmaartifacts.substack.com",
+   "logo": "https://substack-post-media.s3.amazonaws.com/public/images/6385bf39-3887-4187-859c-251aa1a925b3_1024x1024.png",
+   "hero": "AI Artifact is a weekly newsletter helping busy professionals turn new AI tools into practical workflows. Every week, you get one useful workflow, one emerging tool, and one tactical breakdown you can apply immediately.",
+   "author": "John Ma"
+  },
+  {
    "name": "Principles not playbooks",
    "url": "https://stephenemillard.substack.com",
    "logo": null,
    "hero": "Join me in exploring the principles and mental models founders and leaders are using to build enduring and powerful companies in the AI Age.",
    "author": "Stephen Millard"
+  },
+  {
+   "name": "The Founders Corner®",
+   "url": "https://www.the-founders-corner.com",
+   "logo": "https://substack-post-media.s3.amazonaws.com/public/images/1007f51a-8c4c-425f-bda5-da428bc29120_1024x1024.png",
+   "hero": "Your weekly BOOST to Raise and Grow Like A Pro. Tips and Techniques used by prolific Founders.",
+   "author": "Chris Tottman"
   },
   {
    "name": "The ChAIn",
@@ -601,10 +663,66 @@
  ],
  "notes": [
   {
+   "id": 373342252,
+   "date": "2026-11-09T03:30:04.136Z",
+   "body": "A model grading its own work passes its own work.\n\nMy AI video edits didn't get better until I split the two jobs. Claude Opus edits. A different model watches frames from every section of the render and lists what's broken. I only see the video after it passes.\n\nThen every note I give goes back into a skill, so the same mistake doesn't come back.",
+   "likes": 0,
+   "image": null,
+   "url": "https://substack.com/@nishantchahar/note/c-373342252"
+  },
+  {
+   "id": 373342094,
+   "date": "2026-11-08T03:30:06.047Z",
+   "body": "Before I joined Microsoft, I gave myself one challenge: 30 long-form videos in 30 days. No shorts, no reels.\n\nI didn't wait to find the perfect niche. I just posted every day.\n\nA college senior, Love Babbar, had already fixed my titles, thumbnails and hooks, and the channel had gone from 1,000 to 10,000 subscribers in three months. By day 30, it blew up.",
+   "likes": 0,
+   "image": null,
+   "url": "https://substack.com/@nishantchahar/note/c-373342094"
+  },
+  {
+   "id": 373341977,
+   "date": "2026-11-07T03:30:00.592Z",
+   "body": "What tools like REA mean for your career, in three lines.\n\nIf you're a student, a \"clone of X\" project won't make you stand out anymore. Build something that solves a real problem for real users.\n\nIf you're an engineer, expect the interview question to move from \"can you build this?\" to \"do you know why it was built this way?\"\n\nIf you're a founder, features alone won't protect you. I think data is the real moat now, along with users, trust and distribution.",
+   "likes": 0,
+   "image": null,
+   "url": "https://substack.com/@nishantchahar/note/c-373341977"
+  },
+  {
+   "id": 373341845,
+   "date": "2026-11-06T03:30:05.493Z",
+   "body": "One photo, two prompts, two apps, and you get a video.\n\n1. In ChatGPT, upload a photo of yourself and paste: Create a storyboard image for my video edit cuts every second for photoshoot\n\n2. In Gemini, attach that storyboard plus a few more photos of you, and ask for a cinematic UGC style video that follows it.\n\nMine came back with 24 frames, then a video that hit them: the smile, the hair touch, the walk along the railing. The Gemini part was free for me.",
+   "likes": 0,
+   "image": null,
+   "url": "https://substack.com/@nishantchahar/note/c-373341845"
+  },
+  {
+   "id": 373341682,
+   "date": "2026-11-05T03:30:04.099Z",
+   "body": "On my first draft of a video Claude edited, a few cuts sounded abrupt.\n\nA full sweep found 15 lines where the cut ended at the start of the last word instead of its end. \"Edited using AI\" played as \"edited using\".\n\nEvery check had passed, because every check asked \"is there speech at the edge?\" instead of \"is a word cut in half?\" Now a script checks every edge. Most of my 25 editing skills got written that way, one mistake at a time.",
+   "likes": 0,
+   "image": null,
+   "url": "https://substack.com/@nishantchahar/note/c-373341682"
+  },
+  {
+   "id": 373341560,
+   "date": "2026-11-04T03:30:04.905Z",
+   "body": "\"I'm going to Amazon Germany, but I still want to teach. You have the distribution. Let's build something together.\"\n\nThat was Subhesh's message to me. I never wanted to be an EdTech founder. I talked to my friends and family and said yes anyway.\n\nWe called it AlgoPrep. In under a year and a half it had 100,000 free users and 7,000 paid ones. Then Sunstone bought it.",
+   "likes": 0,
+   "image": null,
+   "url": "https://substack.com/@nishantchahar/note/c-373341560"
+  },
+  {
+   "id": 373341409,
+   "date": "2026-11-03T03:30:02.151Z",
+   "body": "At least 15 people ran the same task twice, once with REA and once with a normal AI agent.\n\nREA clearly won 4. It tied or lost 7. In the other 4 it got closer to the original but took longer.\n\nMy rule after reading all of them: REA helps when the answer is locked inside a compiled app. For web apps and small programs, a normal agent mostly gets there alone, and REA costs 1.5 to 3 times more.",
+   "likes": 0,
+   "image": null,
+   "url": "https://substack.com/@nishantchahar/note/c-373341409"
+  },
+  {
    "id": 373340195,
    "date": "2026-11-02T03:30:03.346Z",
    "body": "Upload a photo of yourself to ChatGPT and type one word: /wormview\n\nThe camera drops to the floor and points up. In mine, my shoes ended up as the biggest thing in the frame.\n\nThere's no hidden command list behind the slash. ChatGPT reads the word as a style, which is why a made-up code works at all. I put 105 of them in one list.",
-   "likes": 0,
+   "likes": 1,
    "image": null,
    "url": "https://substack.com/@nishantchahar/note/c-373340195"
   },
@@ -615,46 +733,6 @@
    "likes": 0,
    "image": null,
    "url": "https://substack.com/@nishantchahar/note/c-373340019"
-  },
-  {
-   "id": 373339697,
-   "date": "2026-10-31T03:30:09.595Z",
-   "body": "In 2015 I read a news story about seven students from NSIT who got $120K offers at Google Mountain View.\n\nI didn't know what competitive programming was. I picked NSIT that day.\n\nThat one decision led to Microsoft, a YouTube channel, and a company I sold at 25. I wrote the whole story down.",
-   "likes": 0,
-   "image": null,
-   "url": "https://substack.com/@nishantchahar/note/c-373339697"
-  },
-  {
-   "id": 373218310,
-   "date": "2026-10-30T03:30:06.973Z",
-   "body": "$70 and 1 hour 22 minutes.\n\nThat's what it cost me to build my own version of Granola, the AI meeting notes app, with REA and Claude Code. I called it Notewell. It transcribes your calls, knows who said what, and turns rough notes into clean ones.\n\nThe internet said this means software is done. I tested it, and I don't think it is.",
-   "likes": 0,
-   "image": null,
-   "url": "https://substack.com/@nishantchahar/note/c-373218310"
-  },
-  {
-   "id": 358142059,
-   "date": "2026-10-11T09:08:28.995Z",
-   "body": "Made this out of a 3hr long podcast. Where claude decided the clips and then edited it too. \n\nAll this was done in less than 2hrs, and now it’s a repeatable skill. \n\nWrote a substack article on this! Go check it out :)",
-   "likes": 3,
-   "image": "https://substack-post-media.s3.amazonaws.com/public/images/ed79d308-a7e4-4d51-b23b-a4dcb73ce1ad_3840x2160.jpeg",
-   "url": "https://substack.com/@nishantchahar/note/c-358142059"
-  },
-  {
-   "id": 327217257,
-   "date": "2026-09-01T11:37:01.732Z",
-   "body": "My Instagram video editor is not a human anymore.\n\nI have created a workflow to edit all my videos, all the motion graphics, and b-rolls, and everything is done using AI. \n\nStill, the person who is creating these videos. If you want to understand how I do this, do subscribe to my Substack. \n\nI'm planning to write an article on this, and I'll also share the skills that I've created specifically for my project so that it works like how it works.",
-   "likes": 3,
-   "image": "https://substack-post-media.s3.amazonaws.com/public/images/1f381fcb-2330-4659-b43f-f2ab1cb7a0aa_1744x2578.png",
-   "url": "https://substack.com/@nishantchahar/note/c-327217257"
-  },
-  {
-   "id": 314795474,
-   "date": "2026-08-14T17:15:54.426Z",
-   "body": "New to the platform. So just a short introduction about myself. \n\nI am Nishant, currently building Miles, your personal shopping assistant. I was part of Entrepreneurs First and raised a pre-seed from them! \n\nBefore that I built Algoprep, which got acquired by a series d company. \n\nBefore that worked at Microsoft for 3 years. In Parallel i created content, grew it to a following of 1.5 million. \n\nI want to connect with founders and builders.",
-   "likes": 2,
-   "image": null,
-   "url": "https://substack.com/@nishantchahar/note/c-314795474"
   }
  ]
 }
